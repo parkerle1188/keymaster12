@@ -1,6 +1,30 @@
+# Dependencies
 node_modules
+
+# Build output
 dist
-.DS_Store
-*.local
-coverage
 dist-single
+*.tsbuildinfo
+coverage
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# Netlify local state
+.netlify
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
